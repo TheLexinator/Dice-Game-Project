@@ -50,9 +50,9 @@ const winnerText = document.getElementById('winner');
 
 function determineWinner() {
     if (player1Score > player2Score) {
-        winnerText.textContent = `${player1Name} wins!🏆`;
+        winnerText.textContent = `${player1Name} wins !!!🏆`;
     } else if (player2Score > player1Score) {
-        winnerText.textContent = `${player2Name} wins! 🏆`;
+        winnerText.textContent = `${player2Name} wins !!! 🏆`;
     } else {
         winnerText.textContent = "It's a tie!";
     }

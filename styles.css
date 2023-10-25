@@ -15,32 +15,30 @@ h1 {
   background-color: #121639;
   border-color: #121639;
   border-radius: 45%;
-  font-style: 5em;
-  padding: 2rem;
+  font-style: 4em;
+  padding: 1rem;
 }
 
-/* 
-ignore for now, want it on the page to use later
-#dice-icon {
-  background: linear-gradient(
-    111.4deg,
-    rgb(246, 4, 26) 0.4%,
-    rgb(251, 139, 34) 100.2%
-  ); */
 
 .game-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
   background-color: rgb(196, 180, 84, 0.5);
   border-radius: 20px;
+  display: inline-block;
+  width: 30%;
   text-align: center;
+  margin: 0 5%;
 }
 
 .dice-player {
   text-align: center;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   background-color: #3498db;
   border-radius: 15px;
 }
@@ -67,30 +65,43 @@ button {
   border-radius: 45%;
   padding: 10px 20px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #d1203b;
+  color: #121639;
+  text-decoration: none;
+  cursor: grabbing;
 }
 
 .button-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .button-container button {
-  margin-right: 10px; /* Adjust the margin to create spacing between buttons */
+  margin-right: 10px;
 }
 
 #player {
-  width: 150px;
+  width: 100px;
   border-radius: 50%;
 }
 
 #winnerSection {
   display: none;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #winner {
-  font-size: 24px;
-  color: #e74c3c;
-  font-weight: bold;
+  font-size: 1.5em;
+  color: #c4b454;
+  background-color: #121639;
+  font-weight: 15em;
+  border-radius: 20px;
+  padding: 2rem;
 }
