@@ -9,14 +9,15 @@ let currentPlayer = 1;
 // Ask for player names
 const player1Name = prompt("Enter Player 1's Name:");
 const player2Name = prompt("Enter Player 2's Name:");
+console.log ("Let the games begin")
 document.getElementById('player1').querySelector('h2').textContent = player1Name;
 document.getElementById('player2').querySelector('h2').textContent = player2Name;
 
 function determineWinner() {
     if (player1Score > player2Score) {
-        alert(`${player1Name} wins!`);
+        alert(`${player1Name} wins! `);
     } else if (player2Score > player1Score) {
-        alert(`${player2Name} wins!`);
+        alert(`${player2Name} wins! `);
     } else {
         alert("It's a tie!");
     }
@@ -49,9 +50,9 @@ const winnerText = document.getElementById('winner');
 
 function determineWinner() {
     if (player1Score > player2Score) {
-        winnerText.textContent = `${player1Name} wins!`;
+        winnerText.textContent = `${player1Name} wins!🏆`;
     } else if (player2Score > player1Score) {
-        winnerText.textContent = `${player2Name} wins!`;
+        winnerText.textContent = `${player2Name} wins! 🏆`;
     } else {
         winnerText.textContent = "It's a tie!";
     }
